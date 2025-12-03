@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" class="saferhomes2.org">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Safer senior assistance fixes and emergency responses </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+    
+  <body>
+  <p>html&gt;</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>S.A.F.E.R – Senior Assistance, Fixes & Emergency Response, Inc.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="S.A.F.E.R – Senior Assistance, Fixes & Emergency Response, Inc. provides home safety assessments, accessibility upgrades, emergency hazard response, and return-home preparation for seniors and adults with disabilities in Pennsylvania.">
+  <style>
+    :root {
+      --primary: #0f6cc9;
+      --primary-dark: #084c8a;
+      --accent: #18a957;
+      --light-bg: #f4f7fb;
+      --text-main: #1f2933;
+      --text-muted: #6b7280;
+      --danger: #b91c1c;
+      --radius-lg: 10px;
+      --radius-md: 6px;
+      --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.08);
+    }
+<pre><code>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.pill-primary {
+  background: rgba(15, 108, 201, 0.08);
+  color: var(--primary-dark);
+}
+
+.pill-danger {
+  background: rgba(185, 28, 28, 0.07);
+  color: var(--danger);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-alt {
+  background: var(--light-bg);
+}
+
+.section-title {
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  max-width: 640px;
+  margin-bottom: 2rem;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+}
+
+.top-bar {
+  font-size: 0.8rem;
+  background: #0b1727;
+  color: #e5e7eb;
+  padding: 0.3rem 0;
+}
+
+.top-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.top-bar-inner span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.top-bar-inner a {
+  color: #bfdbfe;
+  font-weight: 500;
+}
+
+nav {
+  padding: 0.75rem 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: radial-gradient(circle at 20% 20%, #ffffff 0, #e5f0ff 30%, #0f6cc9 80%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.18);
+  font-weight: 800;
+  color: #0b1727;
+  font-size: 0.9rem;
+}
+
+.brand-text-title {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  font-size: 1.05rem;
+}
+
+.brand-text-sub {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.95rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary-dark);
+}
+
+.nav-cta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #ffffff;
+  box-shadow: 0 10px 20px rgba(15, 108, 201, 0.32);
+}
+
+.btn-outline {
+  border-color: #d1d5db;
+  color: var(--text-main);
+  background: #ffffff;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  background: transparent;
+  color: #bfdbfe;
+}
+
+.btn-sm {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+}
+
+.hero {
+  padding: 3.5rem 0 3rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.1rem, 3.1vw, 2.7rem);
+  line-height: 1.1;
+  letter-spacing: -0.05em;
+  margin: 0.6rem 0 0.75rem;
+}
+
+.hero-highlight {
+  color: var(--primary-dark);
+}
+
+.hero-lead {
+  color: var(--text-muted);
+  max-width: 620px;
+  font-size: 0.98rem;
+  margin-bottom: 1.4rem;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.4rem;
+}
+
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.hero-cta-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+}
+
+.hero-meta strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text-main);
+}
+
+.hero-card {
+  border-radius: var(--radius-lg);
+  background: radial-gradient(circle at 0% 0%, #ffffff 0, #e4f0ff 38%, #0b1727 150%);
+  color: #f9fafb;
+  padding: 1.75rem 1.6rem;
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-card::after {
+  content: &quot;&quot;;
+  position: absolute;
+  inset: auto -40px -90px;
+  height: 220px;
+  background: radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.16) 0, transparent 55%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.hero-card-title {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #bfdbfe;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.hero-card-main {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.hero-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0 1.3rem;
+  font-size: 0.8rem;
+}
+
+.hero-card-item {
+  background: rgba(15, 23, 42, 0.35);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 0.6rem 0.55rem;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.hero-card-label {
+  font-size: 0.74rem;
+  color: #e5e7eb;
+  margin-bottom: 0.15rem;
+}
+
+.hero-card-value {
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.hero-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.hero-chip {
+  padding: 0.18rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(191, 219, 254, 0.85);
+  color: #dbeafe;
+  font-size: 0.72rem;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.program-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1rem 1.1rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+}
+
+.program-kicker {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--primary-dark);
+}
+
+.program-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.program-tag {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  color: var(--text-muted);
+}
+
+.safety-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.safety-list {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.safety-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.safety-bullet {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--primary);
+  margin-top: 0.4rem;
+  flex-shrink: 0;
+}
+
+.safety-card {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.1rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  font-size: 0.84rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.safety-card h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.safety-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.founder-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.5rem;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  font-size: 0.9rem;
+}
+
+.founder-name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.founder-role {
+  font-size: 0.8rem;
+  color: var(--primary-dark);
+  margin-bottom: 0.4rem;
+}
+
+.metric-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  font-size: 0.8rem;
+}
+
+.metric {
+  padding: 0.5rem 0.7rem;
+  border-radius: var(--radius-md);
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.metric strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.cta-panel {
+  background: #0b1727;
+  color: #e5e7eb;
+  border-radius: var(--radius-lg);
+  padding: 1.8rem 1.6rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: center;
+  box-shadow: var(--shadow-soft);
+}
+
+.cta-panel h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.3rem;
+}
+
+.cta-panel p {
+  font-size: 0.9rem;
+  color: #d1d5db;
+}
+
+.cta-details {
+  font-size: 0.85rem;
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.cta-details span {
+  display: flex;
+  gap: 0.4rem;
+}
+
+footer {
+  padding: 1.8rem 0 1.4rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+
+  .hero-grid,
+  .program-grid,
+  .safety-grid,
+  .founder-grid,
+  .cta-panel {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .program-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  nav {
+    padding: 0.7rem 0 0.9rem;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .hero {
+    padding-top: 2.3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .program-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cta-panel {
+    padding: 1.4rem 1.2rem;
+  }
+}
+</code></pre>
+  </style>
+</head>
+<body>
+  <!-- Top bar -->
+  <header>
+    <div class="top-bar">
+      <div class="container top-bar-inner"> <span> 24–48 hr response for urgent home safety hazards (non-911). </span> <span> Call: <a href="tel:12679698057">(267) 969-8057</a> · Email: <a href="mailto:saferhomes2@gmail.com">saferhomes2@gmail.com</a> </span> </div>
+    </div> <!-- Nav -->
+    <nav>
+      <div class="container nav-inner"> <a href="#top" class="brand">
+          <div class="brand-mark">S✓</div>
+          <div>
+            <div class="brand-text-title">S.A.F.E.R</div>
+            <div class="brand-text-sub"> Senior Assistance, Fixes &amp; Emergency Response, Inc. </div>
+          </div>
+        </a>
+        <div class="nav-links"> <a href="#programs">Programs</a> <a href="#safety">Safety &amp; Compliance</a> <a href="#payers">Hospitals &amp; Insurers</a> <a href="#support">Fund / Donate</a> <a href="#contact">Partner</a> </div>
+        <div class="nav-cta"> <a href="tel:12679698057" class="btn btn-outline btn-sm">Call S.A.F.E.R</a> <a href="#contact" class="btn btn-primary btn-sm">Refer a Senior</a> </div>
+      </div>
+    </nav>
+  </header> <!-- Hero -->
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="pill pill-primary"> Community nonprofit · Seniors &amp; adults with disabilities </div>
+          <h1> Making homes <span class="hero-highlight">safe, accessible, and ready</span> for the people you love. </h1>
+          <p class="hero-lead"> S.A.F.E.R – Senior Assistance, Fixes &amp; Emergency Response, Inc. is a Pennsylvania nonprofit focused on seniors (55+) and adults with disabilities. We provide home safety assessments, accessibility upgrades, emergency hazard response, and return-home preparation after hospital or rehab stays. </p>
+          <div class="hero-badges"> <span class="pill pill-danger">NON-EMERGENCY HAZARD RESPONSE</span> <span class="pill pill-primary">FIELD-TESTED CONSTRUCTION + SAFETY EXPERIENCE</span> </div>
+          <div class="hero-cta-row"> <a href="#contact" class="btn btn-primary"> Refer a senior / client </a> <a href="#programs" class="btn btn-outline"> View S.A.F.E.R programs </a> <a href="#support" class="btn btn-outline"> Support &amp; donate </a> </div>
+          <div class="hero-cta-note"> We work with families, healthcare providers, case managers, Medicaid and other payers, and community partners to keep people safely at home. </div>
+          <div class="hero-meta">
+            <div> <strong>Who we serve</strong> Seniors 55+ · Adults with disabilities · Caregivers &amp; families </div>
+            <div> <strong>Primary focus</strong> Safety checks · Accessibility · Fall prevention · Urgent hazards · Return-home prep </div>
+            <div> <strong>Location</strong> Two Bala Plaza, Suite 300 – #55764, Bala Cynwyd, PA 19004 </div>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="S.A.F.E.R program snapshot card">
+          <div class="hero-card-title">4-Level S.A.F.E.R Model</div>
+          <div class="hero-card-main"> One nonprofit, four ways to keep home truly “safe enough” to live in. </div>
+          <div class="hero-card-grid">
+            <div class="hero-card-item">
+              <div class="hero-card-label">Level 1</div>
+              <div class="hero-card-value">Safety Check</div>
+              <div class="hero-card-label"> Full home safety assessment, photos &amp; written plan. </div>
+            </div>
+            <div class="hero-card-item">
+              <div class="hero-card-label">Level 2</div>
+              <div class="hero-card-value">Safety Upgrade</div>
+              <div class="hero-card-label"> Grab bars, rails, lighting, non-slip, small fixes that prevent big injuries. </div>
+            </div>
+            <div class="hero-card-item">
+              <div class="hero-card-label">Level 3</div>
+              <div class="hero-card-value">Emergency Hazard</div>
+              <div class="hero-card-label"> Non-911 urgent hazards stabilized by trained field teams. </div>
+            </div>
+            <div class="hero-card-item">
+              <div class="hero-card-label">Level 4</div>
+              <div class="hero-card-value">Return-Home Prep</div>
+              <div class="hero-card-label"> Ready-the-home for discharge: paths, bathrooms, bedrooms, equipment. </div>
+            </div>
+          </div>
+          <div class="hero-card-foot">
+            <div>
+              <div class="hero-chip">Seniors &amp; disability households</div>
+              <div style="margin-top: 0.35rem;"> We partner with health systems, insurers, hospitals, rehab teams, community agencies, and local contractors to stretch every dollar into more safety. </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section> <!-- Programs -->
+    <section id="programs" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">S.A.F.E.R Programs &amp; Services</h2>
+        <p class="section-subtitle"> Our work starts with listening. Every home and every person is different. We build a practical plan around what’s most urgent: safety, independence, and the ability to stay in the place they call home. </p>
+        <div class="program-grid">
+          <article class="program-card">
+            <div class="program-kicker">Level 1</div>
+            <div class="program-title">Safety Check – Home Safety Assessment</div>
+            <p> A full-home walkthrough focused on falls, fire, access, and emergency exits. Includes photos, prioritized recommendations, and a simple action plan that family, caregivers, or payers can follow. </p> <span class="program-tag">Home safety baseline</span>
+          </article>
+          <article class="program-card">
+            <div class="program-kicker">Level 2</div>
+            <div class="program-title">Safety Upgrade – Accessibility &amp; Fixes</div>
+            <p> Installation of grab bars, handrails, non-slip treatments, improved lighting, minor repairs, and other small-scale fixes that prevent major injuries, within non-licensed scope. </p> <span class="program-tag">Accessibility &amp; fall-prevention</span>
+          </article>
+          <article class="program-card">
+            <div class="program-kicker">Level 3</div>
+            <div class="program-title">Emergency Hazard Response</div>
+            <p> Rapid response to non-911 home hazards—broken steps, loose flooring, temporary leak mitigation, unsafe fixtures—and coordination with licensed trades when needed. </p> <span class="program-tag">Non-emergency rapid response</span>
+          </article>
+          <article class="program-card">
+            <div class="program-kicker">Level 4</div>
+            <div class="program-title">Return-Home Preparation</div>
+            <p> Preparing the home before discharge from hospital or rehab: clearing paths, rearranging furniture, setting up sleeping and toileting areas, and aligning with the care team’s safety instructions. </p> <span class="program-tag">Hospital-to-home transitions</span>
+          </article>
+        </div>
+      </div>
+    </section> <!-- Safety & Compliance -->
+    <section id="safety" class="section">
+      <div class="container safety-grid">
+        <div>
+          <h2 class="section-title">Safety, Ethics &amp; Compliance</h2>
+          <p class="section-subtitle"> S.A.F.E.R was built to protect vulnerable people <em>and</em> protect the mission. Our internal policies go beyond minimum requirements: conflict of interest, no-romance rules, whistleblower protections, data privacy, and strict safety protocols in the field. </p>
+          <ul class="safety-list">
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>Who we serve.</strong> Seniors 55+ and adults with disabilities or functional limitations, regardless of income, race, gender, or background. </div>
+            </li>
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>What we do.</strong> Home safety assessments; accessibility modifications; adaptive equipment installation; minor and preventive repairs; emergency hazard response; fall-prevention upgrades; household support services; and educational programs on safety, independence, and emergency planning. </div>
+            </li>
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>What we do <em>not</em> do.</strong> We do not perform licensed trade work (full electrical, gas, major plumbing, roofing, HVAC), and we do not enter homes when conditions are unsafe (violence, weapons, severe contamination). </div>
+            </li>
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>Boundaries &amp; ethics.</strong> No romantic or intimate relationships are permitted between anyone acting for the organization, or with clients. All conflicts of interest must be disclosed. Whistleblowers are protected. </div>
+            </li>
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>Protection for funders &amp; partners.</strong> Documented policies for financial controls, document retention, incident reporting, and ongoing quality improvement help keep the organization audit-ready. </div>
+            </li>
+          </ul>
+        </div>
+        <aside class="safety-card">
+          <div>
+            <div class="safety-label">Core safeguards</div>
+            <h4>Field &amp; Organizational Safety</h4>
+            <p> Every visit follows a written safety checklist: PPE, environment scan, documentation, and clear “stop-work” authority if a situation becomes unsafe or beyond scope. </p>
+          </div>
+          <div>
+            <div class="safety-label">Client protection</div>
+            <h4>Senior Home Visit Waiver &amp; Privacy</h4>
+            <p> Seniors or authorized representatives sign a clear waiver explaining what we do, what we don’t do, and how their information and photos are protected and stored. </p>
+          </div>
+          <div>
+            <div class="safety-label">Governance</div>
+            <h4>Founder &amp; Board Governance</h4>
+            <p> S.A.F.E.R operates under formal bylaws with a Board of Directors, independent oversight on compensation and major transactions, and written conflict-of-interest and whistleblower policies. </p>
+          </div>
+        </aside>
+      </div>
+    </section> <!-- Hospitals, Insurers & Payers -->
+    <section id="payers" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">For Hospitals, Insurers &amp; Care Managers</h2>
+        <p class="section-subtitle"> S.A.F.E.R is designed to plug directly into your discharge planning, care management, and risk-reduction work. We turn “unsafe to return home” into a structured plan: assessment → prioritized work → documentation → follow-up. </p>
+        <div class="safety-grid">
+          <div>
+            <ul class="safety-list" style="margin-top:0;">
+              <li> <span class="safety-bullet"></span>
+                <div> <strong>Who we partner with.</strong> Hospitals, rehab centers, post-acute care, home health agencies, Medicaid plans, managed care organizations, ACOs, community health centers, and social service agencies. </div>
+              </li>
+              <li> <span class="safety-bullet"></span>
+                <div> <strong>Common use cases.</strong> High fall-risk patients; unsafe stairs and entries; bathrooms without grab bars; cluttered or blocked pathways; damaged flooring; temporary leak or damage mitigation; homes needing prep before discharge. </div>
+              </li>
+              <li> <span class="safety-bullet"></span>
+                <div> <strong>What you receive.</strong> Clear reports with photos, recommended actions by priority, basic cost ranges, and a record of completed safety work suitable for case notes and audits. </div>
+              </li>
+              <li> <span class="safety-bullet"></span>
+                <div> <strong>Funding models.</strong> We combine payer contracts, grants, donations, and mission-related revenue (sale of safety tools and educational materials) to stretch support for low-income and under-resourced households. </div>
+              </li>
+            </ul>
+          </div>
+          <aside class="founder-card">
+            <div class="safety-label">Next steps for payers</div>
+            <p> To explore contracts, pilots, or referral pathways, contact S.A.F.E.R leadership directly. We can align our 4-level program with your quality, safety, and readmission goals. </p>
+            <div class="cta-details" style="margin-top:0.75rem;"> <span> <strong>Contact:</strong> Malcom Greene, Founder &amp; President </span> <span> <strong>Phone:</strong> <a href="tel:12679698057" style="color:#0f6cc9;">(267) 969-8057</a> </span> <span> <strong>Email:</strong> <a href="mailto:saferhomes2@gmail.com" style="color:#0f6cc9;">saferhomes2@gmail.com</a> </span> </div>
+            <p style="font-size:0.82rem;margin-top:0.8rem;color:#6b7280;"> We can provide sample reports, safety checklists, and draft scopes of work tailored to your program (e.g., Medicaid, dual-eligible, or seniors at highest risk). </p>
+          </aside>
+        </div>
+      </div>
+    </section> <!-- Founder / Story -->
+    <section id="founder" class="section">
+      <div class="container founder-grid">
+        <div>
+          <h2 class="section-title">Why S.A.F.E.R exists</h2>
+          <p class="section-subtitle"> The organization was born from hands-on construction and handyman work inside real homes— seeing seniors and adults with disabilities trying to navigate around hazards that could be fixed with the right support. S.A.F.E.R turns that experience into a structured, accountable nonprofit that puts safety first. </p>
+          <ul class="safety-list">
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>Mission-driven, not profit-driven.</strong> All net revenue is reinvested into safety upgrades, emergency hazard response, and expanded capacity to serve more households. </div>
+            </li>
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>Built for partnerships.</strong> Health systems, insurers, hospitals, rehab facilities, case managers, and community groups can plug into a clear 4-level program structure and standardized documentation. </div>
+            </li>
+            <li> <span class="safety-bullet"></span>
+              <div> <strong>Future-minded.</strong> S.A.F.E.R is designed to grow into contracts, grants, and social enterprise: mission-aligned sales of safety tools, accessibility equipment, and educational materials that fund more free or low-cost services. </div>
+            </li>
+          </ul>
+        </div>
+        <aside class="founder-card">
+          <div class="founder-name">Malcom Greene</div>
+          <div class="founder-role"> Founder &amp; President, S.A.F.E.R – Senior Assistance, Fixes &amp; Emergency Response, Inc. </div>
+          <p> Malcom brings years of real-world experience inside homes—fixing what’s broken, solving safety problems on the spot, and working directly with families who can’t afford to “wait and see” if a hazard becomes an emergency. </p>
+          <p> He created S.A.F.E.R so that seniors and adults with disabilities would have a dedicated nonprofit champion focused on one thing: making home safe enough to stay. The organization blends practical construction skills with nonprofit structure, compliance, and accountability to funders. </p>
+          <div class="metric-row">
+            <div class="metric"> <strong>Hands-on focus</strong> Safety, accessibility, and real-world problem-solving in the field. </div>
+            <div class="metric"> <strong>Nonprofit lens</strong> Built to meet funder expectations on governance, ethics, and documentation. </div>
+          </div>
+        </aside>
+      </div>
+    </section> <!-- Support / Donate -->
+    <section id="support" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Support &amp; Donate</h2>
+        <p class="section-subtitle"> Your support turns “unsafe to live here” into “safe enough to stay.” Donations and sponsorships help us cover free or reduced-cost services for seniors and adults with disabilities who have nowhere else to turn. </p>
+        <div class="cta-panel" style="background:#0f172a;">
+          <div>
+            <div class="pill pill-primary" style="margin-bottom: 0.6rem;"> Individual donors · Businesses · Foundations </div>
+            <h3>Three high-impact ways to support S.A.F.E.R</h3>
+            <ul class="safety-list" style="margin-top:0.6rem;">
+              <li> <span class="safety-bullet"></span>
+                <div> <strong>Fund a Safety Check.</strong> Sponsor home safety assessments and written plans for low-income seniors and disability households. </div>
+              </li>
+              <li> <span class="safety-bullet"></span>
+                <div> <strong>Underwrite Safety Upgrades.</strong> Help pay for grab bars, railings, lighting, and critical preventive repairs that keep people out of the hospital. </div>
+              </li>
+              <li> <span class="safety-bullet"></span>
+                <div> <strong>Support Emergency Hazard Response.</strong> Fund rapid, non-911 safety work when a home becomes dangerous overnight due to damage or deterioration. </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="safety-label">How to give today</div>
+            <p style="margin:0.6rem 0 0.8rem;font-size:0.9rem;color:#d1d5db;"> While we finalize our online donation processing, the simplest way to start is by email. Tell us how you’d like to help, and we’ll follow up with options that fit your goals (one-time gift, recurring support, or program sponsorship). </p>
+            <div class="cta-details" style="margin-top:0;"> <span> <strong>Email:</strong> <a href="mailto:saferhomes2@gmail.com?subject=Support%20S.A.F.E.R" style="color:#bfdbfe;"> saferhomes2@gmail.com </a> </span> <span> <strong>Subject line:</strong> “Support S.A.F.E.R” </span> </div>
+            <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;"> <a href="mailto:saferhomes2@gmail.com?subject=Support%20S.A.F.E.R" class="btn btn-primary btn-sm"> Email to pledge support </a> <a href="#contact" class="btn btn-ghost btn-sm"> Talk about sponsorships </a> </div>
+          </div>
+        </div>
+      </div>
+    </section> <!-- Contact / Partner CTA -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="cta-panel">
+          <div>
+            <div class="pill pill-primary" style="margin-bottom: 0.6rem;"> Refer · Partner · Support </div>
+            <h3>Let’s make one more home S.A.F.E.R.</h3>
+            <p> Whether you’re a family member, case manager, hospital, insurer, or community partner, we’d love to talk about how we can help keep your seniors and disability clients safe at home. </p>
+            <div class="cta-details"> <span> <strong>Phone:</strong> <a href="tel:12679698057" style="color:#bfdbfe;">(267) 969-8057</a> </span> <span> <strong>Email:</strong> <a href="mailto:saferhomes2@gmail.com" style="color:#bfdbfe;">saferhomes2@gmail.com</a> </span> <span> <strong>Mailing address:</strong> Two Bala Plaza, Suite 300 – #55764, Bala Cynwyd, PA 19004 </span> </div>
+          </div>
+          <div>
+            <div class="safety-label">Quick contact</div>
+            <p style="margin-bottom: 0.8rem;"> While we build out our online referral forms, the fastest way to reach us is by phone or email. When you contact us, share: </p>
+            <ul class="safety-list" style="margin-top:0;">
+              <li> <span class="safety-bullet"></span>
+                <div>Basic information about the person and home (no SSNs or medical charts by email).</div>
+              </li>
+              <li> <span class="safety-bullet"></span>
+                <div>What you’re worried about: falls, access, leaks, damage, clutter, or a discharge date.</div>
+              </li>
+              <li> <span class="safety-bullet"></span>
+                <div>Any deadlines tied to discharge, inspections, or funding.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div> © <span id="year"></span> S.A.F.E.R – Senior Assistance, Fixes &amp; Emergency Response, Inc. All rights reserved. </div>
+      <div class="footer-links"> <span>Nonprofit corporation · Pennsylvania</span> </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+- [ }
+    
+  </body>
+  
+</html>
